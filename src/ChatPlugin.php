@@ -86,7 +86,7 @@ class ChatPlugin implements Plugin
         return $this->navigationCountBadge ?? config('curator.resources.navigation_count_badge');
     }
 
-    public function navigationGroup(string | Closure $group = null): static
+    public function navigationGroup(string | Closure | null $group = null): static
     {
         $this->navigationGroup = $group;
 
